@@ -15,7 +15,7 @@
             <h1>The Sillies &amp;<br> MOst awsome Gang <br> in the World</h1>
             <h3>It´s Circle Guy, Hat guy &amp; Red Guy. <br>
             They´re the best of friends.</h3>
-            <button class="cta alt">Read More</button>
+            <a class="cta alt" href="#more-info">Read More</a>
             <div class="character 1"></div>
             <div class="character 2"></div>
             <div class="character 3"></div>
@@ -25,23 +25,77 @@
     
     <nav>
 
+        <a href="#" class="logo">The Gang</a>
+        <ul>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#story">The Story</a></li>
+            <li><a href="#more-info">More info</a></li>
+        </ul>
     </nav>
 
-    <div class="more-info"></div>
+    <div class="more-info" id="more-info"></div>
+    <h2>Join our fan club</h2>
+    <p>Bacon ipsum dolor amet <span class="hightlight">pig</span> brisket jowl ham hock ham jerky picanha swine. Beef ribs bresaola flank shankle frankfurter ribeye, cupim hamburger. Fatback bacon pastrami filet mignon spare ribs, tri-tip prosciutto. 
+        Meatball t-bone frankfurter meatloaf leberkas, spare ribs brisket chuck.</p>
+        <button class="cta">Sign me UP</button>
 
     <div class="sep"></div>
-    <div class="story"></div>
+    <div class="story" id="story">
+        <ul class="nb-list">
+            <li class="blue">Rock´n Roll</li>
+            <li class="gray">&nbsp;</li>
+            <li class="yellow dragging">Laughter</li>
+            <li class="red">Square Offs</li>
+            <li class="pink">Circuitous Routes</li>
+            <li class="salmon">Trigonometry</li>
+            <li class="blue">Rad Hats</li>
+            <li class="yellow">Being Silly</li>
+        
+        </ul>
+        <h3>Left: Thing We find Inportant<br/>
+        Our Story</h3>
+        <p>Pork chop t-bone ground round tri-tip chuck burgdoggen capicola ribeye, andouille tongue ham hock.
+             Meatball flank bresaola pastrami prosciutto jowl turkey swine sausage. </p>
+        <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.</p>
+        <p>Prosciutto swine hamburger alcatra ham kielbasa sausage short ribs jerky pork doner. Turducken ribeye tail pork loin ham hock, brisket flank ground round. 
+            Brisket pancetta prosciutto strip steak landjaeger bacon salami tongue.</p>
+            <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.
+                Ham kielbasa sausage short ribs jerky pork</p>
+    </div>
     <div class="sep"></div>
     <img src="img/the-gang.png" width="735" height="399" alt="The Gang">
     <footer>
+        Made by Carlo <a href="">No link website</a>
+    </footer>
         <div class="popup">
             <div class="blanket"></div>
             <div class="content">
-                <button class="close"></button>
+                <h2>Fill In your details</h2>
+                <form action="">
+                    <div class="item">
+                        <label>Your First Name</label>
+                        <input type="text" placeholder="Awesomeface" value="Shirley">
+                    </div>
+                    <div class="item">
+                            <label>Your Favourite Color</label>
+                            <input type="text" placeholder="Circleface">
+                    </div>
+                    <div class="item">
+                            <label>Your Last Name</label>
+                            <input type="text" placeholder="Pink">
+                    </div>
+                    <div class="item">
+                            <label>Your Favourite Food</label>
+                            <input type="text" placeholder="Apple Pie">
+                    </div>
+                    <button class="cta">I want in!</button>
+
+                </form>
+                <button class="close">Close</button>
 
             </div>
 
         </div>
-    </footer>
+   
 </body>
 </html>
