@@ -168,13 +168,79 @@ margin: 50px 0;
     display: inline;
     line-height: 50px;
     font-weight: 800px;
+}
 
+.sep{
+width: 470px;
+height: 10px;
+background-color: #111111;
+margin: 70px auto;
+
+}
+
+.story h3{
+    font-size: 40px;
+
+}
+
+.nb-list{
+    width: 470px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #EDEDED;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+}
+
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.gray{background-color: rgba (0,0,0, .1);}
+.nb-list li.yellow{
+    background-color:#ffd400;
+    color: #111111;
+}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FF8072;}
+
+.gang-img{
+    display: block;
+    margin: 0 auto;
 }
 
 
 /*
-<div class="more-info" id="more-info"></div>
-    <h2>Join our fan club</h2>
-    <p>Bacon ipsum dolor amet <span class="hightlight">pig</span> brisket jowl ham hock ham jerky picanha swine. Beef ribs bresaola flank shankle frankfurter ribeye, cupim hamburger. Fatback bacon pastrami filet mignon spare ribs, tri-tip prosciutto. 
-        Meatball t-bone frankfurter meatloaf leberkas, spare ribs brisket chuck.</p>
-        <button class="cta">Sign me UP</button>
+<div class="sep"></div>
+    <div class="story" id="story">
+        <ul class="nb-list">
+            <li class="blue">Rock´n Roll</li>
+            <li class="gray">&nbsp;</li>
+            <li class="yellow dragging">Laughter</li>
+            <li class="red">Square Offs</li>
+            <li class="pink">Circuitous Routes</li>
+            <li class="salmon">Trigonometry</li>
+            <li class="blue">Rad Hats</li>
+            <li class="yellow">Being Silly</li>
+        
+        </ul>
+        <h3>Left: Thing We find Inportant<br/>
+        Our Story</h3>
+        <p>Pork chop t-bone ground round tri-tip chuck burgdoggen capicola ribeye, andouille tongue ham hock.
+             Meatball flank bresaola pastrami prosciutto jowl turkey swine sausage. </p>
+        <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.</p>
+        <p>Prosciutto swine hamburger alcatra ham kielbasa sausage short ribs jerky pork doner. Turducken ribeye tail pork loin ham hock, brisket flank ground round. 
+            Brisket pancetta prosciutto strip steak landjaeger bacon salami tongue.</p>
+            <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.
+                Ham kielbasa sausage short ribs jerky pork</p>
+    </div>
