@@ -11,6 +11,11 @@ font-weight: 800;
 font-size: 50px;
 }
 
+h2{
+    font-weight: 800;
+    font-size: 50px;
+    }
+
 h3{
     font-size: 30px;
     font-weight: bold;
@@ -21,15 +26,21 @@ font-size: 20px;
 font-weight: bold;
 }
 
+p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
+}
 
 .wrapper{
  width: 960px;
  margin: 0 auto;
+ 
 }
 
 .hero-banner{
 background-color: #007FFF;
-min-height: 100vh;
+min-height: 50vh;
 padding: 50px 20px;
 box-sizing: border-box;
 position: relative;
@@ -58,7 +69,7 @@ overflow: hidden;
     background-size: 100%;
     width: 363px;
     height: 344px;
-    position: absolute; top: 10%; right: 10%;
+    position: absolute; top: 117px; right: 10%;
     transform: rotate(15deg);
 }
 
@@ -75,7 +86,7 @@ overflow: hidden;
     background-size: 100%;
     width: 217px;
     height: 286px;
-    position: absolute; bottom: 74px; right: 10%;
+    position: absolute; top: 300px; right: 10%;
 }
 
 a.cta,
@@ -97,21 +108,62 @@ button.cta.alt{
 background-color: #ffd400;
 color: #111111;
 box-shadow: 0 0 0 10px  rgba(0,127,255,.15);
+}
 
+nav{
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0,0,0,.2);  
+  position: sticky;
+  top: 0;
 
 }
+
+nav .logo{
+    display: block;
+    width: 300px;
+    height: 40px;
+    position: absolute; top: 50%; left: 0;
+    margin-top: -20px;
+    margin-left: 30px;
+    background: url(img/logo.png) no-repeat 0 0;
+    background-size: 50%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+nav ul li{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: right;
+}
+nav ul li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #111111;
+    padding: 35px 10px;
+    line-height: 30px;
+}
+
+.more-info{
+ text-align: center;
+}
+
+
+
+
 /*
-<div class="hero-banner">
-        <div class="wrapper">
-            <h4>Carlo from <a href="https://www.thekitchn.com/how-to-make-easy-3-ingredient-energy-bars-at-home-cooking-lessons-from-the-kitchn-184306">Ciao</a>
-            </h4>
-            <h1>The Sillies &amp;<br> MOst awsome Gang <br> in the World</h1>
-            <h3>It´s Circle Guy, Hat guy &amp; Red Guy. <br>
-            They´re the best of friends.</h3>
-            <a class="cta alt" href="#more-info">Read More</a>
-            <div class="character 1"></div>
-            <div class="character 2"></div>
-            <div class="character 3"></div>
-        </div>
-    </div>
-    
+<div class="more-info" id="more-info"></div>
+    <h2>Join our fan club</h2>
+    <p>Bacon ipsum dolor amet <span class="hightlight">pig</span> brisket jowl ham hock ham jerky picanha swine. Beef ribs bresaola flank shankle frankfurter ribeye, cupim hamburger. Fatback bacon pastrami filet mignon spare ribs, tri-tip prosciutto. 
+        Meatball t-bone frankfurter meatloaf leberkas, spare ribs brisket chuck.</p>
+        <button class="cta">Sign me UP</button>
