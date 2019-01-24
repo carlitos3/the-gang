@@ -100,6 +100,13 @@ box-shadow: 0 0 0 10px  rgba(0,127,255,.15);
 padding: 20px 30px;
 border-radius: 10px;
 text-decoration: none;
+outline: none;
+border: none;
+}
+
+a.cta: :active,
+button.cta: :active{
+    opacity: .7; 
 
 }
 
@@ -111,6 +118,7 @@ box-shadow: 0 0 0 10px  rgba(0,127,255,.15);
 }
 
 nav{
+    z-index: 1;
   height: 100px;
   background-color: white;
   box-shadow: 0 5px 8px rgba(0,0,0,.2);  
@@ -180,6 +188,7 @@ margin: 70px auto;
 
 .story h3{
     font-size: 40px;
+    font-weight: 800px;
 
 }
 
@@ -190,6 +199,8 @@ margin: 70px auto;
     background-color: #EDEDED;
     float: left;
     margin: 0 20px 20px 0;
+    position: relative;
+
 }
 
 .nb-list li{
@@ -214,12 +225,49 @@ margin: 70px auto;
 .nb-list li.pink{background-color: #FFADF9;}
 .nb-list li.salmon{background-color: #FF8072;}
 
+.nb-list li.dragging{
+    background-color: yellow;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    right: -30px;
+    transform: rotate(6deg);
+    box-shadow:0 2px 14px rgba(0,0,0, .3);
+ }
+
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 50px;
+    background: url(img/hand.png);
+    background-size: 100%;
+    bottom: 4px;
+    left: 60%;
+
+}
+
 .gang-img{
     display: block;
     margin: 0 auto;
 }
 
+footer{
+    text-align: center;
+    color: rgba(0,0,0, .4);
+    font-size: 20px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
 
+footer a {
+    color: rgba(0,0,0, .4);
+}
+
+.popup{
+    display: none;
+}
 /*
 <div class="sep"></div>
     <div class="story" id="story">
