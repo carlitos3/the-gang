@@ -26,7 +26,7 @@
     <nav>
         <a href="#" class="logo">The Gang</a>
         <ul>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="javascript:()" onclick="showPopup();">Sign Up</a></li>
             <li><a href="#story">The Story</a></li>
             <li><a href="#more-info">More info</a></li>
         </ul>
@@ -37,7 +37,7 @@
     <h2>Join our fan club</h2>
     <p>Bacon ipsum dolor amet <span class="hightlight">pig</span> brisket jowl ham hock ham jerky picanha swine. Beef ribs bresaola flank shankle frankfurter ribeye, cupim hamburger. Fatback bacon pastrami filet mignon spare ribs, tri-tip prosciutto. 
         Meatball t-bone frankfurter meatloaf leberkas, spare ribs brisket chuck.</p>
-        <button class="cta">Sign me UP</button>
+        <button class="cta" onclick="showPopup();">Sign me UP</button>
     </div>
     </div>
     <div class="sep"></div>
@@ -77,22 +77,26 @@
             <div class="content">
                 <h2>Fill In your details</h2>
                 <form action="">
-                    <div class="item">
-                        <label>Your First Name</label>
-                        <input type="text" placeholder="Awesomeface" value="Shirley">
+                    <div class="row">
+                        <div class="item">
+                            <label>Your First Name</label>
+                            <input type="text" placeholder="Awesomeface" value="Shirley">
+                        </div>
+                        <div class="item">
+                                <label>Your Favourite Color</label>
+                                <input type="text" placeholder="Circleface">
+                        </div>
                     </div>
-                    <div class="item">
-                            <label>Your Favourite Color</label>
-                            <input type="text" placeholder="Circleface">
-                    </div>
-                    <div class="item">
-                            <label>Your Last Name</label>
-                            <input type="text" placeholder="Pink">
-                    </div>
-                    <div class="item">
-                            <label>Your Favourite Food</label>
-                            <input type="text" placeholder="Apple Pie">
-                    </div>
+                    <div class="row">
+                        <div class="item">
+                                <label>Your Last Name</label>
+                                <input type="text" placeholder="Pink">
+                        </div>
+                        <div class="item">
+                                <label>Your Favourite Food</label>
+                                <input type="text" placeholder="Apple Pie">
+                        </div>
+                    </div>    
                     <button class="cta">I want in!</button>
 
                 </form>
@@ -101,6 +105,9 @@
             </div>
 
         </div>
-   
+       
+
+   <script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>

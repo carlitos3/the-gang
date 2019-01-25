@@ -104,8 +104,8 @@ outline: none;
 border: none;
 }
 
-a.cta: :active,
-button.cta: :active{
+a.cta :active,
+button.cta :active{
     opacity: .7; 
 
 }
@@ -266,29 +266,99 @@ footer a {
 }
 
 .popup{
-    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    /*display: none;*/
 }
+
+.popup .blanket{
+    background-color: rgba(0,0,0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup .content{
+    box-sizing: border-box;
+    width: 960px;
+    height: 500px;
+    padding: 30px 40px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -480px;
+}
+
+.popup h2{
+    margin: 10px 0 20px;
+}
+
+.popup .cta{
+margin-top: 40px;
+}
+
+.popup .close{
+    width: 80px;
+    height: 80px;
+    background:  #FF3300 url(img/close.png) no-repeat center center;
+    background-size: 50%;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+.popup .row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.popup .item{
+    float: left;
+    width: 400px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.popup .item:first-child{
+    margin-left: 0;
+}
+
+
+.popup .item label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup .item input[type='text']{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    border: 4px solid #111111;
+    height: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+
+
 /*
-<div class="sep"></div>
-    <div class="story" id="story">
-        <ul class="nb-list">
-            <li class="blue">Rock´n Roll</li>
-            <li class="gray">&nbsp;</li>
-            <li class="yellow dragging">Laughter</li>
-            <li class="red">Square Offs</li>
-            <li class="pink">Circuitous Routes</li>
-            <li class="salmon">Trigonometry</li>
-            <li class="blue">Rad Hats</li>
-            <li class="yellow">Being Silly</li>
-        
-        </ul>
-        <h3>Left: Thing We find Inportant<br/>
-        Our Story</h3>
-        <p>Pork chop t-bone ground round tri-tip chuck burgdoggen capicola ribeye, andouille tongue ham hock.
-             Meatball flank bresaola pastrami prosciutto jowl turkey swine sausage. </p>
-        <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.</p>
-        <p>Prosciutto swine hamburger alcatra ham kielbasa sausage short ribs jerky pork doner. Turducken ribeye tail pork loin ham hock, brisket flank ground round. 
-            Brisket pancetta prosciutto strip steak landjaeger bacon salami tongue.</p>
-            <p>Pork tri-tip sausage chicken flank prosciutto chuck jerky pork belly.
-                Ham kielbasa sausage short ribs jerky pork</p>
-    </div>
